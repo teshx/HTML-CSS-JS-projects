@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #00008bcb;
+}
+
+.wrraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.wrraper .loder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.loder .loding {
+  background-color: aliceblue;
+  width: 30px;
+  height: 30px;
+  border-radius: 55px;
+  margin: 0 10px;
+  animation: lode 0.8s ease infinite;
+}
+
+.loder .loding.one {
+  animation-delay: 0.3s;
+}
+.loder .loding.two {
+  animation-delay: 0.4s;
+}
+.loder .loding.three {
+  animation-delay: 0.5s;
+}
+
+@keyframes lode {
+  0% {
+    width: 30px;
+    height: 30px;
+  }
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}
